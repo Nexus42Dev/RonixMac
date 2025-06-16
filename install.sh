@@ -11,7 +11,7 @@ main() {
     local versionInfo=$(curl -s "https://raw.githubusercontent.com/Nexus42Dev/RonixMac/refs/heads/main/version.json")
     
     local mChannel=$(echo $versionInfo | ./jq -r ".channel")
-    local version=$(echo $versionInfo | ./jq -r ".roblox-client")
+    local version=$(echo $versionInfo | ./jq -r ".\"roblox-client\"")
     curl "http://setup.rbxcdn.com/mac/$version-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
     
     echo -n "Installing Latest Roblox... "
