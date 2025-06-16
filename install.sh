@@ -43,7 +43,7 @@ main() {
 
     echo -n "Installing Ronix App... "
     [ -d "/Applications/Ronix.app" ] && rm -rf "/Applications/Ronix.app"
-    mv ./Ronix.app /Applications/Ronix.app
+    mv "./Ronix Mac.app" "/Applications/Ronix Mac.app"
     rm ./ronix.zip
     rm ./jq
 
