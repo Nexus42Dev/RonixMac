@@ -24,9 +24,9 @@ main() {
     echo -e "Done."
 
     echo -e "Downloading Ronix Mac..."
-    curl "https://raw.githubusercontent.com/Nexus42Dev/RonixMac/refs/heads/main/ronix.zip" -o "./ronix.zip"
+    curl "https://raw.githubusercontent.com/Nexus42Dev/RonixMac/refs/heads/main/main/ronix.zip" -o "./ronix.zip"
 
-    echo -n "Installing MacSploit... "
+    echo -n "Installing Ronix Mac... "
     unzip -o -q "./ronix.zip"
     echo -e "Done."
 
