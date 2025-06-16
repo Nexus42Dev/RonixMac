@@ -3,6 +3,6 @@
     "ronix-ui": "release1",
     "ronix-client": "release1",
     "release-tag": "1.0.0",
-    "channel": "live",
+    "channel": "main",
     "changelog": ""
 }
