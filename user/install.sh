@@ -10,7 +10,7 @@ main() {
     echo -e "Downloading Latest Roblox..."
     
     [ -f ./RobloxPlayer.zip ] && rm ./RobloxPlayer.zip
-    local versionInfo=$(curl -s "https://git.raptor.fun/main/version.json")
+    local versionInfo=$(curl -s "https://raw.githubusercontent.com/Nexus42Dev/RonixMac/refs/heads/main/version.json")
     
     local mChannel=$(echo $versionInfo | ./jq -r ".channel")
     local version=$(echo $versionInfo | ./jq -r ".\"roblox-client\"")
